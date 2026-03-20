@@ -2,9 +2,9 @@
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-This repository is a *WebView* implementation for nightly build for the [**GregTech Lite Modpack**][Modpack], used to download the lastest version of the modpack via [*Packwiz*][Packwiz]. 
+This repository is a [*Tauri*][Tauri] implementation for downloading nightly build for the [**GregTech Lite Modpack**][Modpack], used to download the latest version of the modpack. 
 
 This downloader can export modpack in formats that are available for installation with any MC launcher.
 
 [Modpack]: https://github.com/GregTechLite/GregTech-Lite-Modpack
-[Packwiz]: https://github.com/packwiz/packwiz
+[Tauri]: https://github.com/tauri-apps/tauri

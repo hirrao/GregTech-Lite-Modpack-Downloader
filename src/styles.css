@@ -35,11 +35,6 @@ h2 {
   margin: 0;
 }
 
-.subtitle {
-  margin: 8px 0 18px;
-  color: #486581;
-}
-
 .form {
   display: grid;
   gap: 14px;
@@ -64,6 +59,19 @@ input {
   font-size: 14px;
 }
 
+select {
+  width: 100%;
+  border: 1px solid #9fb3c8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
 button {
   border: none;
   border-radius: 10px;
@@ -85,6 +93,48 @@ button:disabled {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+}
+
+.progress-panel {
+  margin-bottom: 14px;
+  padding: 14px;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.progress-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.progress-text,
+.download-meta {
+  color: #486581;
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #d9e2ec;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #0f7ae5 0%, #38bdf8 100%);
+  transition: width 120ms ease-out;
+}
+
+.download-meta {
+  margin: 10px 0 0;
+  font-size: 13px;
 }
 
 .status {
@@ -116,8 +166,8 @@ button:disabled {
 
 .logs {
   margin: 0;
-  min-height: 300px;
-  max-height: 400px;
+  min-height: 240px;
+  max-height: 360px;
   overflow: auto;
   border: 1px solid #d9e2ec;
   border-radius: 10px;
